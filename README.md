@@ -1,5 +1,5 @@
 # Pet dos Pets :dog:
-Projeto Interdisciplinar das dosciplinas Desenvolvimento Web I, Design Digital e Engenharia de Software I do curso de Desenvolvimento de Software Multiplataforma da FATEC-ZL.
+Projeto Interdisciplinar das disciplinas Desenvolvimento Web I, Design Digital e Engenharia de Software I do curso de Desenvolvimento de Software Multiplataforma da FATEC-ZL.
 
 ## Integrantes do Grupo 1
 
