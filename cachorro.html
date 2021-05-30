@@ -1,11 +1,11 @@
 <!DocType HTML>
 <html lang="pt-BR">
     <head>
-        <title>Pet dos Pets - Acessibilidade</title>
+        <title>Pet dos Pets</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=devide-width, initial-scale=1.0">
         <meta name="Description" content="PetShop">
-        <meta name="keywords" content="acessibilidade, petshop, animais, estimação, pets">
+        <meta name="keywords" content="petshop, animais, estimação, pets">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     </head>
@@ -126,53 +126,98 @@
             </nav>
         </header>
         <main id="conteudo">
-            <ul class="breadcrumb">
-                <li><a href="index.html">Início</a></li>
-                <li><b>Acessibilidade</b></li><!--Nome da página que está aparecendo-->
-            </ul>
+            <conteudo id="conteudo-topo">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Início</a></li>
+                    <li><b>Cachorro</b></li><!--Nome da página que está aparecendo-->
+                </ul>
+                <label for="ordenar"><b>Ordenar Por:</b></label>
+                <select name="ordenar" id="ordenar">
+                    <option value="popularidade">Popularidade</option>
+                    <option value="menor preco">Menor Preço</option>
+                    <option value="maior preco">Maior Preço</option>
+                    <option value="avaliacao">Avaliação do Cliente (média)</option>
+                    <option value="produto novo">Produtos mais novos</option>
+                    <option value="relevante">Mais Relevante</option>
+                </select>
+            </conteudo>
+            <aside id="filtro-categoria">
+                <h2 id="categoria-title">Cachorro</h2>
+                <conteudo id="filtro">
+                    <h2 id="categoria-title">Rações</h2>
+                    <ul>
+                        <li><a href="#">Ração Seca</a></li>
+                        <li><a href="#">Ração Úmida</a></li>
+                        <li><a href="#">Ração Medicamentosa</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Medicina e Saúde</h2>
+                    <ul>
+                        <li><a href="#">Vitaminas e Suplementos</a></li>
+                        <li><a href="#">Antipulgas e Carrapatos</a></li>
+                        <li><a href="#">Tratamentos para Pele</a></li>
+                        <li><a href="#">Homeopáticos</a></li>
+                        <li><a href="#">Outros</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Higiene e Limpeza</h2>
+                    <ul>
+                        <li><a href="#">Tapetes Higiênicos</a></li>
+                        <li><a href="#">Banheiros para Cachorro</a></li>
+                        <li><a href="#">Pentes, Escovas e Tesouras</a></li>
+                        <li><a href="#">Eliminador de Odores</a></li>
+                        <li><a href="#">Diversos</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Ossinhos e Petiscos</h2>
+                    <ul>
+                        <li><a href="#">Ossinhos</a></li>
+                        <li><a href="#">Biscoitos</a></li>
+                        <li><a href="#">Bifinhos</a></li>
+                        <li><a href="#">Molhos</a></li>
+                        <li><a href="#">Bebidas</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Acessórios para Alimentação</h2>
+                    <ul>
+                        <li><a href="#">Comedouros e Bebedouros</a></li>
+                        <li><a href="#">Porta Rações e Acessórios</a></li>
+                        <li><a href="#">Alimentadores e Bebedouros Automáticos</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Shampoos e Comésticos</h2>
+                    <ul>
+                        <li><a href="#">Shamapoos</a></li>
+                        <li><a href="#">Perfumes e Colônias</a></li>
+                        <li><a href="#">Condicionadores</a></li>
+                        <li><a href="#">Hidratantes</a></li>
+                        <li><a href="#">Banho a Seco</a></li>
+                    </ul>
+                </conteudo>
+            </aside>
             <section>
-                <h1 class="title">Acessibilidade</h1>
-                <p class="paragrafo">Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
-                <p class="paragrafo">Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em A-.</p>
-                <p class="paragrafo">Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas “Ctrl” e “+” para aumentar todo o site e “Ctrl” e “-“ para diminuir. Para voltar ao padrão, pressione “Ctrl” e “0”.</p>
-                <p class="paragrafo">Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador web. Utilize sempre a versão mais recente de seu software.</p>
-                <p class="paragrafo">Teclas de atalho por navegadores</p>
-                <p class="paragrafo"><b>Internet Explorer e Google Chrome:</b></p>
-                <ul class="paragrafo">
-                    <li>“Alt” + “1” - ir para o conteúdo</li>
-                    <li>“Alt” + “2” - ir para o menu</li>
-                    <li>“Alt” + “3” - ir para o rodapé</li></ul>
-                <p class="paragrafo"><b>Firefox:</b></p>
-                <ul class="paragrafo">
-                    <li>“Alt” + “Shift” + “número”</li>
-                </ul>
-                <p class="paragrafo"><b>Opera:</b></p>
-                <ul class="paragrafo">
-                    <li>“Shift” + “Escape” + “número”</li>
-                </ul>
-                <p class="paragrafo"><b>Safari e OmniWeb:</b></p>
-                <ul class="paragrafo">
-                <li>“Ctrl” + “número”</li>
-                </ul>
-                <p class="paragrafo"><b>Navegação por tabulação:</b></p>
-                <p class="paragrafo">Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links, botões, campos de formulário e outros na ordem em que eles são apresentados na página, e Shift + Tab para retornar. Use as setas direcionais para acessar as informações textuais.</p>
-                <p class="paragrafo">Sugestões de programas disponíveis para pessoas com deficiência</p>
-                <ul class="paragrafo">
-                    <li><b>Nitrous Voice Flux:</b> controla o computador por voz (Gratuito);</li><br>
-                    <li><b>NVDA:</b> software livre para ler tela – vários idiomas (Windows);</li><br>
-                    <li><b>YeoSoft Text:</b> leitor de tela em inglês e português;</li><br>
-                    <li><b>Jaws for Windows:</b> leitor de tela – vários idiomas;</li><br>
-                    <li><b>Virtual Vision:</b> leitor de telas em português do Brasil;</li><br>
-                    <li><b>DOSVOX:</b> sistema para deficientes visuais (Windows ou Linux);</li><br>
-                    <li><b>Talkback:</b> leitor de tela disponível em smartphones Android.</li><br>
-                </ul>
-                <p class="paragrafo">Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
-                <p class="paragrafo"><b>LIBRAS - Língua Brasileira de Sinais</b></p>
-                <p class="paragrafo">Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/" target="_blank"><b>VLibras</b></a>.</p>
-                <ul class="paragrafo">
-                    <li>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</li>
-                    <li>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</li>
-                </ul>
+                <h1 class="title">PRODUTOS PARA CACHORRO</h1>
+                <conteudo id="prod-container2">
+                    <div class="produto-home">
+                        <a href="#"><img class="produto-foto" src="images/golden-frangoarros-filhote.jpg" alt="Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg"></a><br>
+                        <a href="#">Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg</a><br>
+                        <p><b>R$19,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </div>
+                    <div class="produto-home">
+                        <a href="#"><img class="produto-foto" src="images/premier-labrador.jpg" alt="Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg"></a><br>
+                        <a href="#">Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg</a><br>
+                        <p><b>R$199,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </div>
+                    <div class="produto-home">
+                        <a href="produto.html"><img class="produto-foto" src="images/pedigree-filhotes-frango.jpg" alt="Ração Úmida Pedigree Sachê Frango ao Molho para Cães Filhotes"></a><br>
+                        <a href="produto.html">Ração Úmida Pedigree Sachê Frango ao Molho para Cães Filhotes</a><br>
+                        <p><b>R$2,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </div>
+                    <!--div class="produto-home">
+                        <a href="#"><img class="produto-foto" src="images/tapete-cafune.jpg" alt="Tapete Higiênico Cafuné Slim 30 unidades"></a><br>
+                        <a href="#">Tapete Higiênico Cafuné Slim 30 unidades</a><br>
+                        <p><b>R$74,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </div-->
+                </conteudo>
             </section>
         </main>
         <div vw class="enabled"><!--VLibras-->

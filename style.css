@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
 body{
     background-color: #fff;
     font-size: 12pt;
@@ -18,7 +18,6 @@ a:hover{
     background-color: #fff;
 }
 #atalhos{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
     list-style: none;
     padding-left: 2%;
@@ -104,7 +103,6 @@ input[type=search]{
 }
 #icon-user li a{
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 11pt;
 }
@@ -139,7 +137,6 @@ label[for="bt-menu"]{
     float: left;
     margin: 0 14%;
     padding: 0 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #menu li{
     position: relative;
@@ -193,7 +190,6 @@ label[for="bt-menu"]{
 }
 .breadcrumb li{
     display: inline;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     color: black;
 }
@@ -221,7 +217,6 @@ label[for="bt-menu"]{
 }
 .title{
     color: #19A4E0;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18pt;
     padding: 1% 2%;
 }
@@ -234,7 +229,6 @@ label[for="bt-menu"]{
     justify-content: center;
 }
 .produto-home{
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     /*align-items: center;*/
     justify-content: space-around;
@@ -285,7 +279,6 @@ label[for="bt-menu"]{
     margin: 0 0 4rem 5rem;
 }
 .blog-title{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 1% 3%;
     font-size: 14pt;
 }
@@ -294,7 +287,6 @@ label[for="bt-menu"]{
     clear: boath;
     display: table;
     width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #blog-1 img{
     width: 12rem;
@@ -306,7 +298,6 @@ label[for="bt-menu"]{
     clear: boath;
     display: table;
     width: 80%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #blog-2 img{
     width: 12rem;
@@ -325,7 +316,6 @@ label[for="bt-menu"]{
     justify-content: center;
 }
 .pets{
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -339,7 +329,6 @@ label[for="bt-menu"]{
     height: auto;
     margin-left: 25%;
     border-radius: 10rem;
-    /*padding: 50px 0;*/
 }
 .nome-pet{
     font-size: 16pt;
@@ -357,13 +346,45 @@ label[for="bt-menu"]{
     margin-left: 25%;
     font-size: 12pt;
 }
+#conteudo-topo{/*página departamento cachorro.html*/
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+
+}
+label[for=ordenar]{
+    margin-left: 80%; 
+}
+#ordenar{
+    width: 10rem;
+    height: 1.25rem;
+    border: 0.25px solid #000;
+}
+#filtro-categoria{
+    width: 25%;
+    height: auto;
+    border: 1px solid #000;
+}
+#categoria-title{
+    font-size: 14pt;
+    color:#19A4E0;
+    margin: 3% 10%;
+}
+#filtro li{
+    margin-left: 20%;
+}
+/*#prod-container2{
+    display: grid;
+    grid-template-rows: 20rem;
+    flex-direction: row;
+    width: 80%;
+}*/
 #mapa-site{/*página mapasite.html*/
     width: 100%;
     margin-left: 6%;
 }
 #mapa-site li{
     list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #mapa-site li ul{
     padding-left: 2%;
@@ -378,7 +399,6 @@ label[for="bt-menu"]{
 }
 .paragrafo{/*página acessibilidade.html*/
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0 5% 0 5%;
     margin-top: 0.5rem;
 }
@@ -390,7 +410,6 @@ label[for="bt-menu"]{
     width: 100%;
     height: auto;
     background-color: #e0d619;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
     color: #000;
     text-align: center;
