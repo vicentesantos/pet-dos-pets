@@ -126,10 +126,107 @@
             </nav>
         </header>
         <main id="conteudo">
-            <ul class="breadcrumb">
-                <li><a href="index.html">Início</a></li>
-                <li><b>Adoção</b></li><!--Nome da página que está aparecendo-->
-            </ul>
+            <conteudo id="conteudo-topo">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Início</a></li>
+                    <li><b>Adoção</b></li><!--Nome da página que está aparecendo-->
+                </ul>
+            </conteudo>
+            <aside id="filtro-categoria">
+                <h2 id="categoria-title">Adoção</h2>
+                <conteudo id="filtro">
+                    <h2 id="categoria-title">Espécie</h2>
+                    <ul>
+                        <li><a href="#">Cachorro</a></li>
+                        <li><a href="#">Gato</a></li>
+                        <li><a href="#">Peixe</a></li>
+                        <li><a href="#">Ver Mais...</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Idade</h2>
+                    <ul>
+                        <li><a href="#">Raça</a></li>
+                        <li><a href="#">Golden Retrivier</a></li>
+                        <li><a href="#">Beagle</a></li>
+                        <li><a href="#">Siames</a></li>
+                        <li><a href="#">Dourado</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Porte</h2>
+                    <ul>
+                        <li><a href="#">Mini</a></li>
+                        <li><a href="#">Pequeno</a></li>
+                        <li><a href="#">Médio</a></li>
+                        <li><a href="#">Grande</a></li>
+                    </ul>
+                    <h2 id="categoria-title">Sexo</h2>
+                    <ul>
+                        <li><a href="#">Macho</a></li>
+                        <li><a href="#">Fêmea</a></li>
+                        <li><a href="#">Não Específicado</a></li>
+                    </ul>
+                </conteudo>
+            </aside>
+            <section id="container-adocao">
+                <h1 id="title-adocao">ADOÇÃO</h1>
+                <div id="adocao-container">
+                    <conteudo class="pag-adocao">
+                        <div class="pag-pets">
+                            <img class="pet-foto" src="images/dog1.jpg" alt="cachorro da raça flat coated retriever preto"><br>
+                            <p class="nomepag-pet"><b>Laika</b></p><br>
+                            <p class="infopag-pet"> Oi, eu sou a <b>Laika</b> tenho 1 aninho.</p>
+                            <p class="infopag-pet">Gosto de brincar, correr e fazer um pouco de bagunça hehe.</p>
+                            <p class="infopag-pet">Você pode me adotar?</p>
+                            <button type="button" onclick="alert('Redirecionando para o perfil do pet.')" class="bt-pgadotar"><b>Mais Informações</b></button>
+                        </div>
+                        <div class="pag-pets">
+                            <img class="pet-foto" src="images/dog2.jpg" alt="cachorro da raça corgi na cor dourado claro usando chapéu e gravata com a língua de fora"><br>
+                            <p class="nomepag-pet"><b>Thor</b></p><br>
+                            <p class="infopag-pet">Oi, eu sou o <b>Thor</b>, tenho 3 aninhos</p>
+                            <p class="info-pet">Gosto de dormir, comer bastante e passear.</p>
+                            <p class="infopag-pet">Você pode me adotar?</p>
+                            <button type="button" onclick="alert('Redirecionando para o perfil do pet.')" class="bt-pgadotar"><b>Mais Infomações...</b></button>
+                        </div>
+                        <div class="pag-pets">
+                            <img class="pet-foto" src="images/dog3.jpg" alt="filhote de beagle"><br>
+                            <p class="nomepag-pet"><b>Zeus</b></p><br>
+                            <p class="infopag-pet">Oi, eu sou <b>Zeus</b>, tenho 6 meses.</p>
+                            <p class="infopag-pet">gosto de brincar, correr e de crianças.</p>
+                            <p class="infopag-pet">Você pode me adotar?</p>
+                            <button type="button" onclick="alert('Redirecionando para o perfil do pet.')" class="bt-pgadotar"><b>Mais Informações</b></button>
+                        </div>
+                    </conteudo>
+                </div>
+            </section>
+            <section id="container-categoria2">
+                <div id="adocao-container2">
+                    <conteudo class="pag-adocao2">
+                        <div class="pag-pets">
+                            <img class="pet-foto" src="images/cat1.jpg" alt="gato alaranjado"><br>
+                            <p class="nomepag-pet"><b>Fil</b></p><br>
+                            <p class="infopag-pet"> Oi, eu sou o <b>Fil</b>, tenho 3 aninhos.</p>
+                            <p class="infopag-pet">Gosto de brincar, correr atras do laser e de atenção.</p>
+                            <p class="infopag-pet">Você pode me adotar?</p>
+                            <button type="button" onclick="alert('Redirecionando para o perfil do pet.')" class="bt-pgadotar"><b>Mais Informações</b></button>
+                        </div>
+                        <div class="pag-pets">
+                            <img class="pet-foto" src="images/dog4.jpg" alt="Chihauhua"><br>
+                            <p class="nomepag-pet"><b>Mel</b></p><br>
+                            <p class="infopag-pet">Oi, eu sou a <b>Mel</b> e tenho 6 aninhos</p>
+                            <p class="info-pet">Gosto de correr, latir para a porta e de muito carinho.</p>
+                            <p class="infopag-pet">Você pode me adotar?</p>
+                            <button type="button" onclick="alert('Redirecionando para o perfil do pet.')" class="bt-pgadotar"><b>Mais Infomações...</b></button>
+                        </div>
+                    </conteudo>
+                </div>
+            </section>
+            <section id="paginacao2">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </section>
         </main>
         <div vw class="enabled"><!--VLibras-->
             <div vw-access-button class="active"></div>
