@@ -230,10 +230,10 @@ label[for="bt-menu"]{
 }
 .produto-home{
     display: flex;
-    /*align-items: center;*/
     justify-content: space-around;
     flex-direction: column;
     width: 20%;
+    height: 16rem;
     min-height: auto;
     margin: 3%;
 }
@@ -241,7 +241,6 @@ label[for="bt-menu"]{
     width: 8rem;
     height: auto;
     margin-left: 25%;
-    /*padding: 50px 0;*/
 }
 .bt-comprar{
     background-color: #e0d619;
@@ -363,7 +362,6 @@ label[for=ordenar]{
 #filtro-categoria{
     width: 25%;
     height: auto;
-    border: 1px solid #000;
 }
 #categoria-title{
     font-size: 14pt;
@@ -373,12 +371,98 @@ label[for=ordenar]{
 #filtro li{
     margin-left: 20%;
 }
-/*#prod-container2{
-    display: grid;
-    grid-template-rows: 20rem;
+#container-categoria{
     flex-direction: row;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+#prod-container2{
+    margin-top: -75%;
+    list-style: none;
+    flex-direction: row-reverse;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.title-cat{
     width: 80%;
-}*/
+    color: #19A4E0;
+    font-size: 18pt;
+    padding: 1% 2%;
+    margin-top: -135%;
+}
+.produto-cat{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 36%;
+    height: 16rem;
+    margin: 0 -12% 45% -62% ;
+}
+#container-categoria2{
+    flex-direction: row;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: 51.44%;
+    margin-top: 14%;
+}
+#prod-container3{
+    margin-top: -100%;
+    list-style: none;
+    flex-direction: row-reverse;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#container-categoria3{
+    flex-direction: row;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: 51.44%;
+    margin-top: 18%;
+}
+#prod-container4{
+    margin-top: -100%;
+    list-style: none;
+    flex-direction: row-reverse;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.pagination {
+    display: inline-block;
+    margin-left: 55%;
+    margin-top: -100%;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+} 
+.pagination a.active {
+    background-color: #e0d619;
+    color: white;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 #mapa-site{/*página mapasite.html*/
     width: 100%;
     margin-left: 6%;
