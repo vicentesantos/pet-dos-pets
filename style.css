@@ -371,7 +371,7 @@ label[for=ordenar]{
 #filtro li{
     margin-left: 20%;
 }
-#container-categoria{
+#container-categoria{/*1ª linha de produtos*/
     flex-direction: row;
     display: flex;
     -webkit-align-items: center;
@@ -380,8 +380,8 @@ label[for=ordenar]{
     justify-content: center;
     margin-left: 25%;
 }
-#prod-container2{
-    margin-top: -75%;
+#prod-container2{ /*1ª linha de produtos*/
+    margin-top: -70%;
     list-style: none;
     flex-direction: row-reverse;
     display:flex;
@@ -395,7 +395,7 @@ label[for=ordenar]{
     color: #19A4E0;
     font-size: 18pt;
     padding: 1% 2%;
-    margin-top: -135%;
+    margin-top: -130%;
 }
 .produto-cat{
     display: flex;
@@ -405,7 +405,7 @@ label[for=ordenar]{
     height: 16rem;
     margin: 0 -12% 45% -62% ;
 }
-#container-categoria2{
+#container-categoria2{/*2ª linha de produtos*/
     flex-direction: row;
     display: flex;
     -webkit-align-items: center;
@@ -413,10 +413,10 @@ label[for=ordenar]{
     -webkit-justify-content: center;
     justify-content: center;
     margin-left: 51.44%;
-    margin-top: 14%;
+    margin-top: 10%;
 }
-#prod-container3{
-    margin-top: -100%;
+#prod-container3{/*2ª linha de produtos*/
+    margin-top: -70%;
     list-style: none;
     flex-direction: row-reverse;
     display:flex;
@@ -425,7 +425,7 @@ label[for=ordenar]{
     -webkit-justify-content: center;
     justify-content: center;
 }
-#container-categoria3{
+#container-categoria3{/*3ª e 4ª linha de produtos*/
     flex-direction: row;
     display: flex;
     -webkit-align-items: center;
@@ -435,8 +435,8 @@ label[for=ordenar]{
     margin-left: 51.44%;
     margin-top: 18%;
 }
-#prod-container4{
-    margin-top: -100%;
+#prod-container4{/*3ª linha de produtos*/
+    margin-top: -70%;
     list-style: none;
     flex-direction: row-reverse;
     display:flex;
@@ -445,10 +445,24 @@ label[for=ordenar]{
     -webkit-justify-content: center;
     justify-content: center;
 }
+#prod-container5{/*3ª linha de produtos*/
+    margin-top: -135%;
+    margin-bottom: -100%;
+    list-style: none;
+    flex-direction: row-reverse;
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#paginacao{
+    margin-top: -15%;
+    margin-bottom: -5%;
+}
 .pagination {
     display: inline-block;
-    margin-left: 55%;
-    margin-top: -100%;
+    margin-left: 50%;
 }
 .pagination a {
     color: black;
