@@ -8,6 +8,13 @@
         <meta name="keywords" content="petshop, animais, estimação, pets">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script src="js/jquery-1.7.2.min.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#gallery a').lightBox();
+            });
+         </script>
     </head>
     <body>
        <div id="acess-menu"><!--Barra de Acessibilidade-->
@@ -132,6 +139,45 @@
                 <li><a href="#">Ração Úmida</a></li>
                 <li><b>Pedigree Sachê Frango ao Molho para Cães Filhotes</b></li><!--Nome da página que está aparecendo-->
             </ul>
+            <section id=info-produtos>
+                <conteudo class="imageRow">
+                    <div class="set">
+                        <div class="single first">
+                            <a href="images/pedigree-filhotes-frango.jpg" rel="lightbox[plants]" title="Ração úmida pedigree filhotes sabor frango"><img id="img-principal" src="images/pedigree-filhotes-frango.jpg" alt="Ração úmida pedigree filhotes sabor frango"></a>
+                        </div>
+                        <div class="single">
+                            <a href="images/pedigree-filhotes-frango2.jpg" rel="lightbox[plants]" title="Ração úmida pedigree filhotes sabor frango" ><img class="thumbnail" src="images/pedigree-filhotes-frango2.jpg" alt="Ração úmida pedigree filhotes sabor frango"></a>
+                        </div>
+                        <div class="single">
+                            <a href="images/pedigree-filhotes-frango3.jpg" rel="lightbox[plants]" title="Ração úmida pedigree filhotes sabor frango"><img class="thumbnail" src="images/pedigree-filhotes-frango3.jpg" alt="Ração úmida pedigree filhotes sabor frango"></a>
+                        </div>
+                        <div class="single last">
+                            <a href="images/pedigree-filhotes-frango4.jpg" rel="lightbox[plants]" title="Ração úmida pedigree filhotes sabor frango"><img class="thumbnail" src="images/pedigree-filhotes-frango4.jpg" alt="Ração úmida pedigree filhotes sabor frango"></a>
+                        </div>
+                    </div>                
+                </conteudo>
+                <conteudo id="produto">
+                    <h1 id="title-produto">Ração Úmida Pedigree Filhotes Sabor Frango ao Molho</h1>
+                    <ul id="prod-info2">
+                        <li><b>Código:</b> 1234567890000123</li>
+                        <li><b>Marca:</b> <a href="#">Pedigree</a></li>
+                    </ul>
+                    <div class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
+                    <div id="descricao1">
+                        <p>- Indicada para cães;</p>
+                        <p>- Refeição 100% completa;</p>
+                        <p>- Sem conservantes, sem corantes e sem aromas artificiais;</p>
+                        <p>- Suculentos pedacinhos cozidos a vapor;</p>
+                        <p>- Balanço ideal de fibras;</p>
+                        <p>- Proporciona fezes firmes e fáceis de limpar;</p>
+                        <p>- Contribui para crescimento seguro e saudável;</p>
+                        <p>- Fonte de cálcio e fósforo;</p>
+                        <p>- Disponível em embalagem com 85 g.</p>
+                    </div>
+                </conteudo>
+                
+            </section>   
+            
         </main>
         <div vw class="enabled"><!--VLibras-->
             <div vw-access-button class="active"></div>

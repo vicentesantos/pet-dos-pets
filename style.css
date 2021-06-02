@@ -569,6 +569,236 @@ label[for=ordenar]{
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
+#info-produtos{/*Página produto.html*/
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    -webkit-align-items: left;
+    align-items: left;
+    -webkit-justify-content: left;
+    justify-content: left;
+    margin-top: 3%;
+    /*border: 1px solid #000;*/
+}
+#title-produto{
+    width: 100%;
+    color:#19A4E0;
+    font-size: 18pt;    
+}
+#prod-info2{
+    margin-top: 1rem;
+    list-style: none;
+}
+#prod-info2 li{
+    float: left;
+    margin-right: 5%;
+}
+.avaliacao{
+    color: #e0d619;
+    font-size: 20pt;
+    margin-top: -2%;
+}
+#descricao1{
+    margin-top: 3%;
+    padding-top: 10%;
+    border-top: 1px solid #000;
+}
+/*Início do Lightbox*/
+#img-principal{
+    width: 25rem;
+}
+.thumbnail{
+    width: 4rem;
+}
+#gallery {
+    background-color: #fff;
+    padding: 10px;
+    width: auto;
+}
+#gallery ul { 
+    list-style: none; 
+}
+#gallery ul li { 
+    display: inline; 
+}
+
+#gallery ul a:hover img {
+    border: 5px solid #fff;
+    border-width: 5px 5px 20px;
+    color: #fff;
+}
+#gallery ul a:hover { 
+    color: #fff;
+}
+#lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    opacity: 0.85;
+    display: none;
+}
+#lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+}
+#lightbox img {
+    width: auto;
+    height: auto;
+}
+#lightbox a img {
+    border: none;
+}
+.lb-outerContainer {
+    position: relative;
+    background-color: white;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.lb-container {
+    padding: 10px;
+}
+.lb-loader {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.lb-container > .nav {
+    left: 0;
+}
+.lb-nav a {
+    outline: none;
+}
+.lb-prev, .lb-next {
+    width: 49%;
+    height: 100%;
+    /* Trick IE into showing hover */
+    display: block;
+}
+.lb-prev {
+    left: 0;
+    float: left;
+}
+.lb-next {
+    right: 0;
+    float: right;
+} 
+.lb-prev:hover {
+    background: url(images/prev.png) left 48% no-repeat;
+}
+.lb-next:hover {
+    background: url(images/next.png) right 48% no-repeat;
+} 
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    *zoom: 1;
+    width: 100%;
+}
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.lb-data {
+    padding: 0 10px;
+    color: #bbbbbb;
+}
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+.lb-data .lb-caption {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+}
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 11px;
+}
+.lb-data .lb-close {
+    width: 35px;
+    float: right;
+    padding-bottom: 0.7em;
+    outline: none;
+}
+.lb-data .lb-close:hover {
+    cursor: pointer;
+}
+.imageRow {
+    *zoom: 1;
+    margin: 20px 0;
+}
+.imageRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.imageRow .single {
+    margin-left: 3%;
+}
+.imageRow .single a {
+    float: left;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 7px;
+    line-height: 1em;
+    margin-right: 40px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.imageRow .single a:hover {
+    background-color: #e0d619;
+}
+.imageRow .set {
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.imageRow .set:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.imageRow .set .single a:hover {
+    background-color: #e0d619;
+}/*Fim lightbox*/
 #mapa-site{/*página mapasite.html*/
     width: 100%;
     margin-left: 6%;
