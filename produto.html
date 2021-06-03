@@ -34,8 +34,8 @@
                 <a href="index.html"><img id="logo" src="images/logo.png" title="Pet dos Pets" alt="Logo Pet dos Pets"></a>
                 <form class="pesquisa"><!--Barra de Pesquisa-->
                     <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisa">
-                    <button id="bt-pesquisa"><img src="images/search.png"></button>
-                    <input type="submit" value="Pesquisar">                    
+                    <button id="bt-pesquisa"><img src="images/search.png" alt="pesquisa"></button>
+                    <input type="submit" id="sub-pes" value="Pesquisar">                    
                 </form>
                 <ul id="icon-user"><!--Icones da Área do Cliente-->
                     <li><a href="#" title="Assinatura"><img src="images/assinatura.png" id="assinatura" alt="Assinatura"><br>Assinatura</a></li>
@@ -136,9 +136,33 @@
             <ul class="breadcrumb">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="cachorro.html">Cachorro</a></li>
+                <li><a href="#">Ração</a></li>
                 <li><a href="#">Ração Úmida</a></li>
                 <li><b>Pedigree Sachê Frango ao Molho para Cães Filhotes</b></li><!--Nome da página que está aparecendo-->
             </ul>
+            <aside id="preco">
+                <conteudo>
+                    <p id="preco-prod"><b>R$2,90</b></p>
+                    <p>até 1x de RR$2,90</p><br>
+                    <p><b class="azul">R$2,32</b></p>
+                    <p>20% para assinantes</p><br>
+                    <p><b>Em Estoque</b></p><br>
+                    <p>Vendido por <a href="index.html">Pet dos Pets</a></p><br>
+                    <ul id="sabor">
+                        <li><a href="#">Sabor Carne</a></li>
+                        <li ><a href="produto.html" class="azul"><b>Sabor Frango</b></a></li>
+                    </ul>
+                    <button type="button" onclick="alert('Produto adicionado ao Carrinho')" class="bt-carrinho"><b>Adicionar ao Carrinho</b></button>
+                    <div id="frete">
+                        <h4>Veja as opções de entrega</h4><br>
+                        <p class="detalhes-frete">Frete Grátis para São Paulo!</p><br>
+                        <p class="detalhes-frete">Para assinantes de outros estados <a href="#"><b>saiba mais</b>.</a></p><br>
+                        <label for="cep">Digite seu CEP:</label><br>
+                        <input type="text" name="cep" id="cep" placeholder="00000-000">
+                        <input type="submit" value="CEP">
+                    </div>
+                </conteudo>
+            </aside>
             <section id=info-produtos>
                 <conteudo class="imageRow">
                     <div class="set">
@@ -162,7 +186,7 @@
                         <li><b>Código:</b> 1234567890000123</li>
                         <li><b>Marca:</b> <a href="#">Pedigree</a></li>
                     </ul>
-                    <div class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734; </div>
+                    <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                     <div id="descricao1">
                         <p>- Indicada para cães;</p>
                         <p>- Refeição 100% completa;</p>
@@ -175,8 +199,79 @@
                         <p>- Disponível em embalagem com 85 g.</p>
                     </div>
                 </conteudo>
-                
-            </section>   
+            </section>
+            <h1 class="title-descricao">Produtos Semelhantes</h1>
+            <section id="produtos-semelhantes"><!--Terceira linha de produtos-->
+                <ul id="prod-semelhantes">
+                    <li class="produto-cat">
+                        <a href="#"><img class="produto-foto" src="images/golden-frangoarros-filhote.jpg" alt="Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg"></a><br>
+                        <a href="#">Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg</a><br>
+                        <p><b>R$19,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </li>
+                    <li class="produto-cat">
+                        <a href="#"><img class="produto-foto" src="images/premier-labrador.jpg" alt="Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg"></a><br>
+                        <a href="#">Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg</a><br>
+                        <p><b>R$199,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </li>
+                    <li class="produto-cat">
+                        <a href="produto.html"><img class="produto-foto" src="images/pedigree-filhotes-frango.jpg" alt="Ração Úmida Pedigree Sachê Frango ao Molho para Cães Filhotes"></a><br>
+                        <a href="produto.html">Ração Úmida Pedigree Sachê Frango ao Molho para Cães Filhotes</a><br>
+                        <p><b>R$2,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </li>
+                    <li class="produto-cat">
+                        <a href="#"><img class="produto-foto" src="images/tapete-cafune.jpg" alt="Tapete Higiênico Cafuné Slim 30 unidades"></a><br>
+                        <a href="#">Tapete Higiênico Cafuné Slim 30 unidades</a><br>
+                        <p><b>R$74,90</b></p>
+                        <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
+                    </li>
+                </ul>
+            </section>  
+            <h1 class="title-descricao">Detalhes</h1>
+            <section class="detalhes-prod">
+                <p>A <b>Ração Úmida Pedigree Sachê Frango ao Molho para Cães Filhotes</b> é feita com deliciosos pedaços de frango cozidos a vapor que proporcionam aos cães todo o sabor que eles adoram. É uma refeição completa e balanceada para ser servida todos os dias. Também possui um balanço ideal de fibras, que proporciona fezes mais firmes e fáceis de limpar.</p><br>
+                <p>SAC MARS BRASIL - Serviço de Atendimento ao Consumidor DDG 0800-702-0090 / Caixa postal 61, CEP 08900-970 - Guararema - SP / sac.brasil@mars.com.br - www.pedigree.com.br</p>
+            </section>
+            <h1 class="title-descricao">Especificações</h1>
+            <section class="detalhes-prod">
+                <p><b>Idade:</b> Filhote</p><br>
+                <p><b>Linha:</b> Premium</p><br>
+                <p><b>Pet:</b> Cachorros</p><br>
+                <p><b>Porte:</b> Pequeno, Médio e Grande</p><br>
+                <p><b>Quantidade:</b> 100g</p><br>
+                <p><b>Sabor:</b> Frango ao Molho</p><br>
+                <p><b>Informações Nutricionais:</b> Vitamina D3 (150 UI), vitamina E (20 UI), vitamina C (140 mg), vitamina B1 (1,0 mg), vitamina B2 (1,0 mg), vitamina B6 (0,2 mg), niacina (1,2 mg), biotina (0,01 mg), ácido pantotênico (4,4 mg), ácido fólico (0,04 mg), colina (77 mg), manganês (7,4 mg), iodo (0,3 mg), zinco (62 mg)</p><br>
+                <p><b>Níveis de Garantia:</b> Umidade (máx.)820 g/kg (82%)Proteína Bruta (mín.)90 g/kg (9%)Extrato Etéreo (mín.)45 g/kg (4,5%)Matéria Fibrosa (máx.)20 g/kg (2,0%)Matéria Mineral (máx.)25 g/kg (2,5%)Cálcio (mín.)3.000 mg/kg (0,3%)Cálcio (máx.)4.500 mg/kg (0,45%)Fósforo (mín.)2.400 mg/kg (0,24%)Sódio (mín.)1.000 mg/kg (0,1%)Potássio (mín.)1.050 mg/kg (0,105%)Magnésio (mín.)95 mg/kg (0,0095%)</p><br>
+                <p><b>Recomendações:</b> Conservar em local seco e fresco. Após aberto manter refrigerado e bem acondicionado por até 48 horas. As quantidades podem variar de acordo com a raça, idade e nível de atividade do seu cão. Quantidades orientativas. Ao trocar o alimento do seu cão, faça-o de modo gradual por pelo menos 7 dias. A cada dia, aumente a quantidade até que seu cão seja alimentado somente com PEDIGREE® sachê. Visite o veterinário regularmente.</p><br>
+                <p><b>Composição:</b> Carcaça de frango, miúdo de suíno, gordura de frango, farinha de trigo, glúten de trigo, plasma suíno em pó, fibra de cana-de-açúcar, água, amido de milho, vitaminas (D3, E, C, B1, B2, B6, niacina, ácido pantotênico, ácido fólico, cloreto de colina, biotina), minerais (cloreto de sódio – sal comum, cloreto de potássio, fosfato bicálcico, óxido de manganês, iodato de cálcio, óxido de zinco, óxido de magnésio), tripolifosfato de sódio, goma xantana, corante natural caramelo. Eventuais substitutivos: Carne mecanicamente separada de frango, miúdo de ave, vísceras de aves, pé de frango, cabeça de frango, miúdo de bovino, baço de bovino, baço suíno, polpa de beterraba, carne mecanicamente separada de atum, óleo de peixe refinado, proteína concentrada de soja.</p><br>
+	        </section>
+            <aside id="preco"></aside>
+            <h1 class="title-descricao">Avaliação</h1>
+            <section id="avaliacao-prod">
+                <ul>
+                    <li class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li>Ótimo Produto</li>
+                    <li><b><i>Fulano da Silva</i></b></li><br>
+                    <li><a href="#"><i>Mais Avaliações...</i></a></li><br>
+                </ul> 
+                <ul>
+                    <li><h3 class="avaliacao-med">4.7</h3></li>
+                    <li class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                    <li><button type="button" onclick="prompt('Avaliar o Produto')" class="bt-avaliar"><b>Avaliar o Produto</b></button></li>
+                </ul>
+                <ul>
+                    <li><h3 class="avaliacao-med">94%</h3></li>
+                </ul>
+                <ul>
+                    <li><b>5 estrelas</b> <s class="azul"> . . . . . . .</s> 50 Clientes</li>
+                    <li><b>4 estrelas</b> <s class="azul"> . . . . . . .</s> 04 Clientes</li>
+                    <li><b>3 estrelas</b> <s class="azul"> . . . . . . .</s> 02 Clientes</li>
+                    <li><b>2 estrelas</b> <s class="azul"> . . . . . . .</s> 00 Clientes</li>
+                    <li><b> 1 estrela</b> <s class="azul"> . . . . . . . .</s> 02 Clientes</li>
+                </ul>
+	        </section>
             
         </main>
         <div vw class="enabled"><!--VLibras-->
@@ -223,7 +318,9 @@
                     <li><a href="#">Carrinho</a></li>
                     <li><a href="#">Área do Cliente</a></li>
                 </ul>
-                <a href="mapasite.html" class="mapa-site"><b>MAPA DO SITE</b></a>
+                <ul class="mapa-site">
+                    <li><a href="mapasite.html" ><b>MAPA DO SITE</b></a></li>
+                </ul>
             </div>
             <div id="rod-cont2">
                 <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3056945752787!2d-46.4783791848467!3d-23.521505084702657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61270808f47f%3A0xddc2deca4778eb69!2sFatec%20Zona%20Leste!5e0!3m2!1spt-BR!2sbr!4v1621642507405!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy"></iframe>

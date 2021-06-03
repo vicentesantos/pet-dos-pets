@@ -1,4 +1,9 @@
-*{margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 body{
     background-color: #fff;
     font-size: 12pt;
@@ -64,7 +69,7 @@ a:hover{
 #pesquisa::placeholder{
     padding-left: 1%;
 }
-input[type=submit]{
+#sub-pes{
     display: none;
 }
 input[type=search]{
@@ -346,6 +351,9 @@ label[for="bt-menu"]{
     margin-left: 25%;
     font-size: 12pt;
 }
+.bt-adotar:hover{
+    background-color: #f0f008;
+}
 #conteudo-topo{/*página departamento cachorro.html*/
     flex-direction: row;
     width: 100%;
@@ -416,7 +424,7 @@ label[for=ordenar]{
     margin-left: 51.44%;
     margin-top: 10%;
 }
-#prod-container3{/*2ª linha de produtos*/
+.prod-container3{/*2ª linha de produtos*/
     margin-top: -70%;
     list-style: none;
     flex-direction: row-reverse;
@@ -426,7 +434,7 @@ label[for=ordenar]{
     -webkit-justify-content: center;
     justify-content: center;
 }
-#container-categoria3{/*3ª e 4ª linha de produtos*/
+.container-categoria3{/*3ª e 4ª linha de produtos*/
     flex-direction: row;
     display: flex;
     -webkit-align-items: center;
@@ -544,6 +552,9 @@ label[for=ordenar]{
     margin: 3% 20%;
     font-size: 12pt;
 }
+.bt-pgadotar:hover{
+    background-color: #f0f008;
+}
 #paginacao{ /*Página cachorro.html*/
     margin-top: -15%;
     margin-bottom: -5%;
@@ -569,16 +580,83 @@ label[for=ordenar]{
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
+#produto{
+    margin-left: 5%;
+}
+#preco{
+    width: 19%;
+    height: auto;
+    margin-left: 76%;
+    padding: 2%;
+}
+#preco-cont{
+    margin-left: 3%;
+}
+#preco-prod{
+    font-size: 32pt;
+    color: #19A4E0;
+}
+#sabor li{
+    list-style: none;
+    display: inline;
+    margin-right: 3%;
+}
+.bt-carrinho{
+    background-color: #e0d619;
+    border: none;
+    width: 15rem;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 14pt;
+    margin-top: 5%;
+}
+.bt-carrinho:hover{
+    background-color: #f0f008;
+}
+#frete{
+    border: 1px solid #000;
+    margin-top: 10%;
+    width: 90%;
+    height: 220px;
+    flex-direction: column;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 5%;
+}
+input[type="text"]{
+    width: 60%;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #e0d619;
+}
+input[type=submit]{
+    background-color: #e0d619;
+    border: none;
+    width: 5rem;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 11pt;
+    margin: 3% 0;
+}
+input[type=submit]:hover{
+    background-color: #f0f008;
+}
+.detalhes-frete{
+    font-size: 11pt;
+    text-align: center;
+}
 #info-produtos{/*Página produto.html*/
-    width: 80%;
+    width: 75%;
     flex-direction: row;
     display: flex;
     -webkit-align-items: left;
     align-items: left;
     -webkit-justify-content: left;
     justify-content: left;
-    margin-top: 3%;
-    /*border: 1px solid #000;*/
+    margin-top: -41%;
 }
 #title-produto{
     width: 100%;
@@ -602,6 +680,61 @@ label[for=ordenar]{
     margin-top: 3%;
     padding-top: 10%;
     border-top: 1px solid #000;
+}
+.title-descricao{
+    color:#19A4E0;
+    width: 50%;
+    font-size: 16pt;
+    margin: 3% 0 2% 3%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #000;   
+}
+#produtos-semelhantes{
+    width: 25%;
+    height: auto;
+    margin-left: -10%;
+    display:flex;
+}
+#prod-semelhantes{
+    flex-direction: row-reverse;
+    display: flex;
+    margin: 10% 0 -75% -100%;
+}
+.detalhes-prod{
+    width: 55%;
+    height: auto;
+    margin: 1% 3%;
+}
+#avaliacao-prod{
+    width: 55%;
+    height: 75px;
+    margin: 1% 3%;
+}
+#avaliacao-prod ul{
+    float: left;
+    margin-left: 5%;
+}
+#avaliacao-prod ul li{
+    list-style: none;
+    padding-top: 1%;
+}
+.avaliacao-med{
+    color: #19A4E0;
+    font-size: 32pt;
+}
+.bt-avaliar{
+    background-color: #e0d619;
+    border: none;
+    width: 10rem;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 12pt;
+}
+.bt-avaliar:hover{
+    background-color: #f0f008;
+}
+.azul{
+    color: #19A4E0;
 }
 /*Início do Lightbox*/
 #img-principal{
@@ -758,7 +891,7 @@ label[for=ordenar]{
 }
 .imageRow {
     *zoom: 1;
-    margin: 20px 0;
+    margin: 3% 0;
 }
 .imageRow:after {
     content: "";
@@ -773,8 +906,9 @@ label[for=ordenar]{
     display: block;
     background: rgba(255, 255, 255, 0.1);
     padding: 7px;
+    margin-left: 3%;
     line-height: 1em;
-    margin-right: 40px;
+    margin-right: 1%;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
@@ -801,10 +935,10 @@ label[for=ordenar]{
 }/*Fim lightbox*/
 #mapa-site{/*página mapasite.html*/
     width: 100%;
-    margin-left: 6%;
 }
 #mapa-site li{
     list-style: none;
+    margin-left: 3%;
 }
 #mapa-site li ul{
     padding-left: 2%;
@@ -850,15 +984,13 @@ label[for=ordenar]{
     justify-content: center;
     width: 20rem;
     height: auto;
-    padding-right: 5%;
     margin-left: 3%;
 }
 #redes-sociais{
     flex-direction: column;
     justify-content: center;
-    width: 10rem;
+    width: 8rem;
     height: auto;
-    margin-left: 1.5%;
 }
 #redes-sociais li{
     list-style: none;
@@ -871,8 +1003,8 @@ label[for=ordenar]{
 }
 #institucional{
     flex-direction: column;
-    margin-left: 10%;
-    width: 12rem;
+    margin-left: 5%;
+    width: 8rem;
 }
 #institucional li{
     list-style: none;
@@ -887,7 +1019,7 @@ label[for=ordenar]{
 }
 #clientes{
     flex-direction: column;
-    margin-left: 10%;
+    margin-left: 5%;
     width: 13rem;
 }
 #clientes li{
@@ -905,10 +1037,16 @@ label[for=ordenar]{
     width: 10rem;;
     color: #000;
     text-decoration: none;
-    margin-left: 10%;
 }
-.mapa-site:hover{
-    color:#2428F3;
+.mapa-site li{
+    list-style: none;
+}
+.mapa-site li a{
+    color: #000;
+    text-decoration: none;
+}
+.mapa-site a:hover{
+    color: #2428F3;
     text-decoration: underline;
 }
 #rod-cont2{/*Bloco do mapa de localização*/
