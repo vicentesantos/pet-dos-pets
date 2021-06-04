@@ -17,13 +17,13 @@ Aluno5: Vicente Santos Gonçalves..........RA 1111392111035<br/>
 
 ## Mudanças do Mockup para o HTML
 
-	### Mudanças Gerais
+### Mudanças Gerais
 
 #### *Cor*
 
 ​	Durante a elaboração do MockUp foi mudado a cor amarelo para que não ficasse tão brilhante e incomodasse os olhos das pessoas.
 
-- Amarelo: MockUp #FFF202 / HTML  #e0d619 .
+* Amarelo: MockUp #FFF202 / HTML  #e0d619 .
 
 #### *Fontes*
 
@@ -45,9 +45,9 @@ Aluno5: Vicente Santos Gonçalves..........RA 1111392111035<br/>
 
 #### *Mapa do Site*
 
- 	Na primeira fase do projeto, o mapa do site ia ficar no rodapé do site, porém no desenvolvimento do site e da criação do menu, o mapa do site foi tirado do rodapé e colocado em uma página própria por conta do tamanho.
+​	Na primeira fase do projeto, o mapa do site ia ficar no rodapé do site, porém no desenvolvimento do site e da criação do menu, o mapa do site foi tirado do rodapé e colocado em uma página própria por conta do tamanho.
 
 #### *Ícones de Redes Sociais*
 
-​	Foi padronizado para todos os ícones no formato redondo, mantendo uma identidade visual padronizada.
+​	Foi padronizado para todos os ícones no formato *redondo, mantendo uma identidade visual padronizada.
 
