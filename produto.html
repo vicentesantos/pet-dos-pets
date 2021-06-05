@@ -9,12 +9,18 @@
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <script src="js/jquery-1.7.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/lightbox.js"></script>
         <script type="text/javascript">
             $(function () {
                 $('#gallery a').lightBox();
             });
-         </script>
+            $(document).ready(function(){
+                $('#cep').mask('99999-999');
+            });
+        </script>
+        <script src="js/fonte.js"></script>
+        <script src="js/contraste.js"></script>
     </head>
     <body>
        <div id="acess-menu"><!--Barra de Acessibilidade-->
@@ -23,10 +29,10 @@
                 <li class="atalhos"><a href="#menu" accesskey="2" title="Ir para o menu da página">Ir para o menu da página [2]</a></li>
                 <li class="atalhos"><a href="#rodape" accesskey="3" title="Ir para o rodapé da página">Ir para o rodapé da página [3]</a></li>
                 <li id="pg-acess"><a href="acessibilidade.html" title="Acessibilidade">Acessibilidade</a></li>
-                <li class="contraste"><a href="#" title="Contraste">Contraste</a></li>
-                <li class="contraste"><a href="#" title="Sem Contraste">Sem Contraste</a></li>
-                <li class="fonte"><a href="#" title="Aumentar a fonte (Ctrl +)">A+</a></li> 
-                <li class="fonte"><a href="#" title="Diminuir a fonte (Ctrl -)">A-</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste"title="Contraste">Contraste</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem Contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumenta" title="Aumentar a fonte (Ctrl +)">A+</a></li> 
+                <li class="fonte"><a href="javascript:void(0);" id="diminui" title="Diminuir a fonte (Ctrl -)">A-</a></li>
             </ul>              
         </div>
         <header id="topo">
@@ -38,10 +44,10 @@
                     <input type="submit" id="sub-pes" value="Pesquisar">                    
                 </form>
                 <ul id="icon-user"><!--Icones da Área do Cliente-->
-                    <li><a href="#" title="Assinatura"><img src="images/assinatura.png" id="assinatura" alt="Assinatura"><br>Assinatura</a></li>
-                    <li><a href="#" title="Carrinho"><img src="images/carrinho.png" id="carrinho" alt="Carrinho"><br>Carrinho</a></li>
-                    <li><a href="#" title="Meus Pedidos"><img src="images/sacola.png" id="pedidos" alt="Meus Pedidos"><br>Meus Pedidos</a></li>
-                    <li><a href="#" title="Área do Cliente"><img src="images/perfil.png" id="cliente" alt="Área do Cliente"><br>Área do Cliente</a></li>
+                    <li><a href="javascript:void(0);" title="Assinatura"><img src="images/assinatura.png" id="assinatura" alt="Assinatura"><br>Assinatura</a></li>
+                    <li><a href="javascript:void(0);" title="Carrinho"><img src="images/carrinho.png" id="carrinho" alt="Carrinho"><br>Carrinho</a></li>
+                    <li><a href="javascript:void(0);" title="Meus Pedidos"><img src="images/sacola.png" id="pedidos" alt="Meus Pedidos"><br>Meus Pedidos</a></li>
+                    <li><a href="javascript:void(0);" title="Área do Cliente"><img src="images/perfil.png" id="cliente" alt="Área do Cliente"><br>Área do Cliente</a></li>
                 </ul>
             </div>
             <nav>
@@ -51,84 +57,84 @@
                     <li><a href="index.html"><b>Início</b></a></li>
                     <li><a href="cachorro.html"><b>Cachorro</b></a>
                         <ul><!--nível 2-->
-                            <li><a href="#">Ração</a>
+                            <li><a href="javascript:void(0);">Ração</a>
                                 <ul><!--nível 3-->
-                                    <li><a href="#">Ração Seca</a></li>
-                                    <li><a href="#">Ração Úmida</a></li>
-                                    <li><a href="#">Ração Prescrita</a></li>
-                                    <li><a href="#">Ração Natural</a></li>
+                                    <li><a href="javascript:void(0);">Ração Seca</a></li>
+                                    <li><a href="javascript:void(0);">Ração Úmida</a></li>
+                                    <li><a href="javascript:void(0);">Ração Prescrita</a></li>
+                                    <li><a href="javascript:void(0);">Ração Natural</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Petiscos</a></li>
-                            <li><a href="#">Higiene</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Coleiras, Guias e Peitorais</a></li>
-                            <li><a href="#">Camas e Casinhas</a></li>
-                            <li><a href="#">Acessórios de Alimentação</a></li>
-                            <li><a href="#">Acessórios de Transporte</a></li>
-                            <li><a href="#">Roupas</a></li>
-                            <li><a href="#">Adestramento</a></li>
+                            <li><a href="javascript:void(0);">Petiscos</a></li>
+                            <li><a href="javascript:void(0);">Higiene</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Brinquedos</a></li>
+                            <li><a href="javascript:void(0);">Coleiras, Guias e Peitorais</a></li>
+                            <li><a href="javascript:void(0);">Camas e Casinhas</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Transporte</a></li>
+                            <li><a href="javascript:void(0);">Roupas</a></li>
+                            <li><a href="javascript:void(0);">Adestramento</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Gato</b></a>
+                    <li><a href="javascript:void(0);"><b>Gato</b></a>
                         <ul>
-                            <li><a href="#">Ração</a></li>
-                            <li><a href="#">Petiscos</a></li>
-                            <li><a href="#">Higiene</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Coleiras, Guias e Peitorais</a></li>
-                            <li><a href="#">Camas e Casinhas</a></li>
-                            <li><a href="#">Acessórios de Alimentação</a></li>
-                            <li><a href="#">Acessórios de Transporte</a></li>
-                            <li><a href="#">Roupas</a></li>
-                            <li><a href="#">Adestramento</a></li>
+                            <li><a href="javascript:void(0);">Ração</a></li>
+                            <li><a href="javascript:void(0);">Petiscos</a></li>
+                            <li><a href="javascript:void(0);">Higiene</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Brinquedos</a></li>
+                            <li><a href="javascript:void(0);">Coleiras, Guias e Peitorais</a></li>
+                            <li><a href="javascript:void(0);">Camas e Casinhas</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Transporte</a></li>
+                            <li><a href="javascript:void(0);">Roupas</a></li>
+                            <li><a href="javascript:void(0);">Adestramento</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Aves</b></a>
+                    <li><a href="javascript:void(0);"><b>Aves</b></a>
                         <ul>
-                            <li><a href="#">Alimentação</a></li>
-                            <li><a href="#">Gaiolas</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Acessórios</a></li>
+                            <li><a href="javascript:void(0);">Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Gaiolas</a></li>
+                            <li><a href="javascript:void(0);">Brinquedos</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Acessórios</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Peixes</b></a>
+                    <li><a href="javascript:void(0);"><b>Peixes</b></a>
                         <ul>
-                            <li><a href="#">Alimentação</a></li>
-                            <li><a href="#">Aquarios</a></li>
-                            <li><a href="#">Equipamentos e Acessórios</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Decoração</a></li>
-                            <li><a href="#">Tratamento de Água</a></li>
+                            <li><a href="javascript:void(0);">Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Aquarios</a></li>
+                            <li><a href="javascript:void(0);">Equipamentos e Acessórios</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Decoração</a></li>
+                            <li><a href="javascript:void(0);">Tratamento de Água</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Outros Pets</b></a>
+                    <li><a href="javascript:void(0);"><b>Outros Pets</b></a>
                         <ul>
-                            <li><a href="#">Coelhos</a></li>
-                            <li><a href="#">Hamsters</a></li>
-                            <li><a href="#">Furão</a></li>
-                            <li><a href="#">Tartarugas</a></li>
-                            <li><a href="#">Lagartos</a></li>
-                            <li><a href="#">Chinchila</a></li>
-                            <li><a href="#">Porquinho da Índia</a></li>
-                            <li><a href="#">Gerbil</a></li>
+                            <li><a href="javascript:void(0);">Coelhos</a></li>
+                            <li><a href="javascript:void(0);">Hamsters</a></li>
+                            <li><a href="javascript:void(0);">Furão</a></li>
+                            <li><a href="javascript:void(0);">Tartarugas</a></li>
+                            <li><a href="javascript:void(0);">Lagartos</a></li>
+                            <li><a href="javascript:void(0);">Chinchila</a></li>
+                            <li><a href="javascript:void(0);">Porquinho da Índia</a></li>
+                            <li><a href="javascript:void(0);">Gerbil</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Promoções</b></a></li>
+                    <li><a href="javascript:void(0);"><b>Promoções</b></a></li>
                     <li><a href="adocao.html"><b>Adoção</b></a></li>
-                    <li><a href="#"><b>Outros Serviços</b></a>
+                    <li><a href="javascript:void(0);"><b>Outros Serviços</b></a>
                         <ul>
-                            <li><a href="#">Banho e Tosa</a></li>
-                            <li><a href="#">Adestramento</a></li>
-                            <li><a href="#">Médico Veterinário</a></li>
-                            <li><a href="#">Lagartos</a></li>
-                            <li><a href="#">Chinchila</a></li>
+                            <li><a href="javascript:void(0);">Banho e Tosa</a></li>
+                            <li><a href="javascript:void(0);">Adestramento</a></li>
+                            <li><a href="javascript:void(0);">Médico Veterinário</a></li>
+                            <li><a href="javascript:void(0);">Lagartos</a></li>
+                            <li><a href="javascript:void(0);">Chinchila</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Blog</b></a></li>
+                    <li><a href="javascript:void(0);"><b>Blog</b></a></li>
                 </ul>
             </nav>
         </header>
@@ -136,8 +142,8 @@
             <ul class="breadcrumb">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="cachorro.html">Cachorro</a></li>
-                <li><a href="#">Ração</a></li>
-                <li><a href="#">Ração Úmida</a></li>
+                <li><a href="javascript:void(0);">Ração</a></li>
+                <li><a href="javascript:void(0);">Ração Úmida</a></li>
                 <li><b>Pedigree Sachê Frango ao Molho para Cães Filhotes</b></li><!--Nome da página que está aparecendo-->
             </ul>
             <aside id="preco">
@@ -149,17 +155,19 @@
                     <p><b>Em Estoque</b></p><br>
                     <p>Vendido por <a href="index.html">Pet dos Pets</a></p><br>
                     <ul id="sabor">
-                        <li><a href="#">Sabor Carne</a></li>
+                        <li><a href="javascript:void(0);">Sabor Carne</a></li>
                         <li ><a href="produto.html" class="azul"><b>Sabor Frango</b></a></li>
                     </ul>
                     <button type="button" onclick="alert('Produto adicionado ao Carrinho')" class="bt-carrinho"><b>Adicionar ao Carrinho</b></button>
                     <div id="frete">
                         <h4>Veja as opções de entrega</h4><br>
                         <p class="detalhes-frete">Frete Grátis para São Paulo!</p><br>
-                        <p class="detalhes-frete">Para assinantes de outros estados <a href="#"><b>saiba mais</b>.</a></p><br>
-                        <label for="cep">Digite seu CEP:</label><br>
-                        <input type="text" name="cep" id="cep" placeholder="00000-000">
-                        <input type="submit" value="CEP">
+                        <p class="detalhes-frete">Para assinantes de outros estados <a href="javascript:void(0);"><b>saiba mais</b>.</a></p><br>
+                        <form name="endereco" id="endereco" method="POST"></form>
+                            <label for="cep">CEP</label><br>
+                            <input type="text" name="cep" id="cep" placeholder="99999-999"><br>
+                            <input type="submit" value="CEP">
+                        </div>
                     </div>
                 </conteudo>
             </aside>
@@ -184,7 +192,7 @@
                     <h1 id="title-produto">Ração Úmida Pedigree Filhotes Sabor Frango ao Molho</h1>
                     <ul id="prod-info2">
                         <li><b>Código:</b> 1234567890000123</li>
-                        <li><b>Marca:</b> <a href="#">Pedigree</a></li>
+                        <li><b>Marca:</b> <a href="javascript:void(0);">Pedigree</a></li>
                     </ul>
                     <p class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                     <div id="descricao1">
@@ -204,14 +212,14 @@
             <section id="produtos-semelhantes"><!--Terceira linha de produtos-->
                 <ul id="prod-semelhantes">
                     <li class="produto-cat">
-                        <a href="#"><img class="produto-foto" src="images/golden-frangoarros-filhote.jpg" alt="Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg"></a><br>
-                        <a href="#">Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg</a><br>
+                        <a href="javascript:void(0);"><img class="produto-foto" src="images/golden-frangoarros-filhote.jpg" alt="Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg"></a><br>
+                        <a href="javascript:void(0);">Ração Golden Fórmula para Cães Filhotes Sabor Frango e Arroz - 1kg</a><br>
                         <p><b>R$19,90</b></p>
                         <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
                     </li>
                     <li class="produto-cat">
-                        <a href="#"><img class="produto-foto" src="images/premier-labrador.jpg" alt="Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg"></a><br>
-                        <a href="#">Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg</a><br>
+                        <a href="javascript:void(0);"><img class="produto-foto" src="images/premier-labrador.jpg" alt="Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg"></a><br>
+                        <a href="javascript:void(0);">Ração Premier Raças Específicas Labrador para Cães Adultos Sabor Frango - 12kg</a><br>
                         <p><b>R$199,90</b></p>
                         <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
                     </li>
@@ -222,8 +230,8 @@
                         <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
                     </li>
                     <li class="produto-cat">
-                        <a href="#"><img class="produto-foto" src="images/tapete-cafune.jpg" alt="Tapete Higiênico Cafuné Slim 30 unidades"></a><br>
-                        <a href="#">Tapete Higiênico Cafuné Slim 30 unidades</a><br>
+                        <a href="javascript:void(0);"><img class="produto-foto" src="images/tapete-cafune.jpg" alt="Tapete Higiênico Cafuné Slim 30 unidades"></a><br>
+                        <a href="javascript:void(0);">Tapete Higiênico Cafuné Slim 30 unidades</a><br>
                         <p><b>R$74,90</b></p>
                         <button type="button" onclick="alert('Produto Adicionado ao Carrinho')" class="bt-comprar"><b>Comprar</b></button>
                     </li>
@@ -254,7 +262,7 @@
                     <li class="avaliacao">&#9733;&#9733;&#9733;&#9733;&#9734;</li>
                     <li>Ótimo Produto</li>
                     <li><b><i>Fulano da Silva</i></b></li><br>
-                    <li><a href="#"><i>Mais Avaliações...</i></a></li><br>
+                    <li><a href="javascript:void(0);"><i>Mais Avaliações...</i></a></li><br>
                 </ul> 
                 <ul>
                     <li><h3 class="avaliacao-med">4.7</h3></li>
@@ -306,17 +314,17 @@
                 </ul>
                 <ul id="institucional">
                     <li><b>INSTITUCIONAL</b></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Nossa Loja</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="javascript:void(0);">Sobre Nós</a></li>
+                    <li><a href="javascript:void(0);">Fale Conosco</a></li>
+                    <li><a href="javascript:void(0);">Nossa Loja</a></li>
+                    <li><a href="javascript:void(0);">Trabalhe Conosco</a></li>
                 </ul>
                 <ul id="clientes">
                     <li><b>ÁREA DO CLIENTE</b></li>
-                    <li><a href="#">Assinatura</a></li>
-                    <li><a href="#">Meus Pedidos</a></li>
-                    <li><a href="#">Carrinho</a></li>
-                    <li><a href="#">Área do Cliente</a></li>
+                    <li><a href="javascript:void(0);">Assinatura</a></li>
+                    <li><a href="javascript:void(0);">Meus Pedidos</a></li>
+                    <li><a href="javascript:void(0);">Carrinho</a></li>
+                    <li><a href="javascript:void(0);">Área do Cliente</a></li>
                 </ul>
                 <ul class="mapa-site">
                     <li><a href="mapasite.html" ><b>MAPA DO SITE</b></a></li>

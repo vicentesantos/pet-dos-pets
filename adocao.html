@@ -8,6 +8,9 @@
         <meta name="keywords" content="petshop, animais, estimação, pets">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/fonte.js"></script>
+        <script src="js/contraste.js"></script>
     </head>
     <body>
        <div id="acess-menu"><!--Barra de Acessibilidade-->
@@ -16,10 +19,10 @@
                 <li class="atalhos"><a href="#menu" accesskey="2" title="Ir para o menu da página">Ir para o menu da página [2]</a></li>
                 <li class="atalhos"><a href="#rodape" accesskey="3" title="Ir para o rodapé da página">Ir para o rodapé da página [3]</a></li>
                 <li id="pg-acess"><a href="acessibilidade.html" title="Acessibilidade">Acessibilidade</a></li>
-                <li class="contraste"><a href="#" title="Contraste">Contraste</a></li>
-                <li class="contraste"><a href="#" title="Sem Contraste">Sem Contraste</a></li>
-                <li class="fonte"><a href="#" title="Aumentar a fonte (Ctrl +)">A+</a></li> 
-                <li class="fonte"><a href="#" title="Diminuir a fonte (Ctrl -)">A-</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste"title="Contraste">Contraste</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem Contraste</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumenta" title="Aumentar a fonte (Ctrl +)">A+</a></li> 
+                <li class="fonte"><a href="javascript:void(0);" id="diminui" title="Diminuir a fonte (Ctrl -)">A-</a></li>
             </ul>              
         </div>
         <header id="topo">
@@ -31,10 +34,10 @@
                     <input type="submit" id="sub-pes" value="Pesquisar">                    
                 </form>
                 <ul id="icon-user"><!--Icones da Área do Cliente-->
-                    <li><a href="#" title="Assinatura"><img src="images/assinatura.png" id="assinatura" alt="Assinatura"><br>Assinatura</a></li>
-                    <li><a href="#" title="Carrinho"><img src="images/carrinho.png" id="carrinho" alt="Carrinho"><br>Carrinho</a></li>
-                    <li><a href="#" title="Meus Pedidos"><img src="images/sacola.png" id="pedidos" alt="Meus Pedidos"><br>Meus Pedidos</a></li>
-                    <li><a href="#" title="Área do Cliente"><img src="images/perfil.png" id="cliente" alt="Área do Cliente"><br>Área do Cliente</a></li>
+                    <li><a href="javascript:void(0);" title="Assinatura"><img src="images/assinatura.png" id="assinatura" alt="Assinatura"><br>Assinatura</a></li>
+                    <li><a href="javascript:void(0);" title="Carrinho"><img src="images/carrinho.png" id="carrinho" alt="Carrinho"><br>Carrinho</a></li>
+                    <li><a href="javascript:void(0);" title="Meus Pedidos"><img src="images/sacola.png" id="pedidos" alt="Meus Pedidos"><br>Meus Pedidos</a></li>
+                    <li><a href="javascript:void(0);" title="Área do Cliente"><img src="images/perfil.png" id="cliente" alt="Área do Cliente"><br>Área do Cliente</a></li>
                 </ul>
             </div>
             <nav>
@@ -44,84 +47,84 @@
                     <li><a href="index.html"><b>Início</b></a></li>
                     <li><a href="cachorro.html"><b>Cachorro</b></a>
                         <ul><!--nível 2-->
-                            <li><a href="#">Ração</a>
+                            <li><a href="javascript:void(0);">Ração</a>
                                 <ul><!--nível 3-->
-                                    <li><a href="#">Ração Seca</a></li>
-                                    <li><a href="#">Ração Úmida</a></li>
-                                    <li><a href="#">Ração Prescrita</a></li>
-                                    <li><a href="#">Ração Natural</a></li>
+                                    <li><a href="javascript:void(0);">Ração Seca</a></li>
+                                    <li><a href="javascript:void(0);">Ração Úmida</a></li>
+                                    <li><a href="javascript:void(0);">Ração Prescrita</a></li>
+                                    <li><a href="javascript:void(0);">Ração Natural</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Petiscos</a></li>
-                            <li><a href="#">Higiene</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Coleiras, Guias e Peitorais</a></li>
-                            <li><a href="#">Camas e Casinhas</a></li>
-                            <li><a href="#">Acessórios de Alimentação</a></li>
-                            <li><a href="#">Acessórios de Transporte</a></li>
-                            <li><a href="#">Roupas</a></li>
-                            <li><a href="#">Adestramento</a></li>
+                            <li><a href="javascript:void(0);">Petiscos</a></li>
+                            <li><a href="javascript:void(0);">Higiene</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Brinquedos</a></li>
+                            <li><a href="javascript:void(0);">Coleiras, Guias e Peitorais</a></li>
+                            <li><a href="javascript:void(0);">Camas e Casinhas</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Transporte</a></li>
+                            <li><a href="javascript:void(0);">Roupas</a></li>
+                            <li><a href="javascript:void(0);">Adestramento</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Gato</b></a>
+                    <li><a href="javascript:void(0);"><b>Gato</b></a>
                         <ul>
-                            <li><a href="#">Ração</a></li>
-                            <li><a href="#">Petiscos</a></li>
-                            <li><a href="#">Higiene</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Coleiras, Guias e Peitorais</a></li>
-                            <li><a href="#">Camas e Casinhas</a></li>
-                            <li><a href="#">Acessórios de Alimentação</a></li>
-                            <li><a href="#">Acessórios de Transporte</a></li>
-                            <li><a href="#">Roupas</a></li>
-                            <li><a href="#">Adestramento</a></li>
+                            <li><a href="javascript:void(0);">Ração</a></li>
+                            <li><a href="javascript:void(0);">Petiscos</a></li>
+                            <li><a href="javascript:void(0);">Higiene</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Brinquedos</a></li>
+                            <li><a href="javascript:void(0);">Coleiras, Guias e Peitorais</a></li>
+                            <li><a href="javascript:void(0);">Camas e Casinhas</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Acessórios de Transporte</a></li>
+                            <li><a href="javascript:void(0);">Roupas</a></li>
+                            <li><a href="javascript:void(0);">Adestramento</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Aves</b></a>
+                    <li><a href="javascript:void(0);"><b>Aves</b></a>
                         <ul>
-                            <li><a href="#">Alimentação</a></li>
-                            <li><a href="#">Gaiolas</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Acessórios</a></li>
+                            <li><a href="javascript:void(0);">Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Gaiolas</a></li>
+                            <li><a href="javascript:void(0);">Brinquedos</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Acessórios</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Peixes</b></a>
+                    <li><a href="javascript:void(0);"><b>Peixes</b></a>
                         <ul>
-                            <li><a href="#">Alimentação</a></li>
-                            <li><a href="#">Aquarios</a></li>
-                            <li><a href="#">Equipamentos e Acessórios</a></li>
-                            <li><a href="#">Farmácia</a></li>
-                            <li><a href="#">Decoração</a></li>
-                            <li><a href="#">Tratamento de Água</a></li>
+                            <li><a href="javascript:void(0);">Alimentação</a></li>
+                            <li><a href="javascript:void(0);">Aquarios</a></li>
+                            <li><a href="javascript:void(0);">Equipamentos e Acessórios</a></li>
+                            <li><a href="javascript:void(0);">Farmácia</a></li>
+                            <li><a href="javascript:void(0);">Decoração</a></li>
+                            <li><a href="javascript:void(0);">Tratamento de Água</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Outros Pets</b></a>
+                    <li><a href="javascript:void(0);"><b>Outros Pets</b></a>
                         <ul>
-                            <li><a href="#">Coelhos</a></li>
-                            <li><a href="#">Hamsters</a></li>
-                            <li><a href="#">Furão</a></li>
-                            <li><a href="#">Tartarugas</a></li>
-                            <li><a href="#">Lagartos</a></li>
-                            <li><a href="#">Chinchila</a></li>
-                            <li><a href="#">Porquinho da Índia</a></li>
-                            <li><a href="#">Gerbil</a></li>
+                            <li><a href="javascript:void(0);">Coelhos</a></li>
+                            <li><a href="javascript:void(0);">Hamsters</a></li>
+                            <li><a href="javascript:void(0);">Furão</a></li>
+                            <li><a href="javascript:void(0);">Tartarugas</a></li>
+                            <li><a href="javascript:void(0);">Lagartos</a></li>
+                            <li><a href="javascript:void(0);">Chinchila</a></li>
+                            <li><a href="javascript:void(0);">Porquinho da Índia</a></li>
+                            <li><a href="javascript:void(0);">Gerbil</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Promoções</b></a></li>
+                    <li><a href="javascript:void(0);"><b>Promoções</b></a></li>
                     <li><a href="adocao.html"><b>Adoção</b></a></li>
-                    <li><a href="#"><b>Outros Serviços</b></a>
+                    <li><a href="javascript:void(0);"><b>Outros Serviços</b></a>
                         <ul>
-                            <li><a href="#">Banho e Tosa</a></li>
-                            <li><a href="#">Adestramento</a></li>
-                            <li><a href="#">Médico Veterinário</a></li>
-                            <li><a href="#">Lagartos</a></li>
-                            <li><a href="#">Chinchila</a></li>
+                            <li><a href="javascript:void(0);">Banho e Tosa</a></li>
+                            <li><a href="javascript:void(0);">Adestramento</a></li>
+                            <li><a href="javascript:void(0);">Médico Veterinário</a></li>
+                            <li><a href="javascript:void(0);">Lagartos</a></li>
+                            <li><a href="javascript:void(0);">Chinchila</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><b>Blog</b></a></li>
+                    <li><a href="javascript:void(0);"><b>Blog</b></a></li>
                 </ul>
             </nav>
         </header>
@@ -137,31 +140,31 @@
                 <conteudo id="filtro">
                     <h2 id="categoria-title">Espécie</h2>
                     <ul>
-                        <li><a href="#">Cachorro</a></li>
-                        <li><a href="#">Gato</a></li>
-                        <li><a href="#">Peixe</a></li>
-                        <li><a href="#">Ver Mais...</a></li>
+                        <li><a href="javascript:void(0);">Cachorro</a></li>
+                        <li><a href="javascript:void(0);">Gato</a></li>
+                        <li><a href="javascript:void(0);">Peixe</a></li>
+                        <li><a href="javascript:void(0);">Ver Mais...</a></li>
                     </ul>
                     <h2 id="categoria-title">Idade</h2>
                     <ul>
-                        <li><a href="#">Raça</a></li>
-                        <li><a href="#">Golden Retrivier</a></li>
-                        <li><a href="#">Beagle</a></li>
-                        <li><a href="#">Siames</a></li>
-                        <li><a href="#">Dourado</a></li>
+                        <li><a href="javascript:void(0);">Raça</a></li>
+                        <li><a href="javascript:void(0);">Golden Retrivier</a></li>
+                        <li><a href="javascript:void(0);">Beagle</a></li>
+                        <li><a href="javascript:void(0);">Siames</a></li>
+                        <li><a href="javascript:void(0);">Dourado</a></li>
                     </ul>
                     <h2 id="categoria-title">Porte</h2>
                     <ul>
-                        <li><a href="#">Mini</a></li>
-                        <li><a href="#">Pequeno</a></li>
-                        <li><a href="#">Médio</a></li>
-                        <li><a href="#">Grande</a></li>
+                        <li><a href="javascript:void(0);">Mini</a></li>
+                        <li><a href="javascript:void(0);">Pequeno</a></li>
+                        <li><a href="javascript:void(0);">Médio</a></li>
+                        <li><a href="javascript:void(0);">Grande</a></li>
                     </ul>
                     <h2 id="categoria-title">Sexo</h2>
                     <ul>
-                        <li><a href="#">Macho</a></li>
-                        <li><a href="#">Fêmea</a></li>
-                        <li><a href="#">Não Específicado</a></li>
+                        <li><a href="javascript:void(0);">Macho</a></li>
+                        <li><a href="javascript:void(0);">Fêmea</a></li>
+                        <li><a href="javascript:void(0);">Não Específicado</a></li>
                     </ul>
                 </conteudo>
             </aside>
@@ -220,11 +223,11 @@
             </section>
             <section id="paginacao2">
                 <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#">1</a>
-                    <a class="active" href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">&raquo;</a>
+                    <a href="javascript:void(0);">&laquo;</a>
+                    <a href="javascript:void(0);">1</a>
+                    <a class="active" href="javascript:void(0);">2</a>
+                    <a href="javascript:void(0);">3</a>
+                    <a href="javascript:void(0);">&raquo;</a>
                 </div>
             </section>
         </main>
@@ -260,17 +263,17 @@
                 </ul>
                 <ul id="institucional">
                     <li><b>INSTITUCIONAL</b></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Nossa Loja</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="javascript:void(0);">Sobre Nós</a></li>
+                    <li><a href="javascript:void(0);">Fale Conosco</a></li>
+                    <li><a href="javascript:void(0);">Nossa Loja</a></li>
+                    <li><a href="javascript:void(0);">Trabalhe Conosco</a></li>
                 </ul>
                 <ul id="clientes">
                     <li><b>ÁREA DO CLIENTE</b></li>
-                    <li><a href="#">Assinatura</a></li>
-                    <li><a href="#">Meus Pedidos</a></li>
-                    <li><a href="#">Carrinho</a></li>
-                    <li><a href="#">Área do Cliente</a></li>
+                    <li><a href="javascript:void(0);">Assinatura</a></li>
+                    <li><a href="javascript:void(0);">Meus Pedidos</a></li>
+                    <li><a href="javascript:void(0);">Carrinho</a></li>
+                    <li><a href="javascript:void(0);">Área do Cliente</a></li>
                 </ul>
                 <ul class="mapa-site">
                     <li><a href="mapasite.html" ><b>MAPA DO SITE</b></a></li>
