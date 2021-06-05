@@ -9,11 +9,17 @@ Projeto Interdisciplinar das disciplinas Desenvolvimento Web I, Design Digital e
 
 ## Integrantes do Grupo  1
 
-Aluno1: Bruna Ciriaco Benedito............RA 1111392111021<br/>
-Aluno2: Fernanda Gonçalves Lima...........RA 1111392111014<br/>
-Aluno3: João Pedro Oliveira Gonçalves.....RA 1111392111045<br/>
+Aluno1: Bruna Ciriaco Benedito....................RA 1111392111021<br/>
+Aluno2: Fernanda Gonçalves Lima...............RA 1111392111014<br/>
+Aluno3: João Pedro Oliveira Gonçalves........RA 1111392111045<br/>
 Aluno4: Paulo Henrique Cardoso de Jesus...RA 1111392111018<br/>
-Aluno5: Vicente Santos Gonçalves..........RA 1111392111035<br/>
+Aluno5: Vicente Santos Gonçalves................RA 1111392111035<br/>
+
+## O Que é "Pet dos Pets"?
+
+​	O "Pet dos Pets" nasceu a partir do projeto integrado das disciplinas de Engenharia de Software I, Design Digital e Desenvolvimento Web I no 1º semestre do curso de Desenvolvimento de Software Multiplataforma, da FATEC Zona Leste.<br/>
+
+​	Este projeto foi pensado e elaborado para um e-commerce de petshop para pessoas que tem animais de estimação ou que desejam adotar um, mas que tem dúvidas sobre como fazer, qual raça adotar e outras questões que envolvem a criação do animal.
 
 ## Mudanças do Mockup para o HTML
 
