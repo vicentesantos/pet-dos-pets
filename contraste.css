@@ -1264,3 +1264,72 @@ a:hover{
         width: 30%;
     }
 }
+@media screen and (max-width: 800px) {
+    .pesquisa{/*barra de pesquisa*/
+        margin-left: 5%;
+        width: 50%;
+    }
+    #bt-pesquisa{
+        margin-left: -9%;
+    }
+    #atalhos{
+        padding-left: 0;
+    }
+    #atalhos li{
+        padding-left: 1%;
+    }
+    #icon-user{
+        visibility: hidden;
+    }
+    #icon-user-menu{
+        display: block;
+    }
+    #carrinho, #cliente, #pedidos, #assinatura{
+        visibility: visible;
+    }
+    #cliente, #pedidos{
+        margin-top: 35px;
+        margin-left: -10%
+    }
+    #carrinho, #assinatura{
+        margin-top: 20px;
+    }
+    #carrinho{
+        margin-left: -10%;
+    }
+    #menu{
+        display: none;
+    }
+    label[for="bt-menu"]{
+        display: block;
+        margin-left: 2%;
+    }
+    #bt-menu:checked ~ #menu{
+        display: block;
+    }
+    #menu{
+        margin-left: 0;
+    }
+    #menu li{
+        position: relative;
+        /*float: left;*/
+        width: 100%;
+    }
+    #menu li ul{
+        position: static;
+        width: 100%;
+        /*float: left;*/
+    }
+    menu li ul li{
+        position: relative;
+        width: 100%;
+        /*float: left;*/
+        display: block;
+    }
+    menu li ul li ul{
+        position: relative;
+        width: 100%;
+        /*float: left;*/
+        display: block;
+    }     
+}
