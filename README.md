@@ -27,7 +27,7 @@ Aluno5: Vicente Santos Gonçalves................RA 1111392111035<br/>
 
 
 
-## Mudanças Gerais
+## Mudanças  e  Adaptações Gerais
 
 ### Cor
 
@@ -61,14 +61,15 @@ Aluno5: Vicente Santos Gonçalves................RA 1111392111035<br/>
 
 ​	Foi padronizado para todos os ícones no formato *redondo, mantendo uma identidade visual padronizada.
 
+### JavaScript
+
+Foi aplicada algumas funções básicas e para acessibilidade apresentadas em aula como alerts, máscara de CEP, contraste e aumento e diminuição de fonte.
+
 
 
 ## A Fazer
 
 ### Responsividade
 
-O site atualmente apresenta responsividade para monitores de 1920px, 1280px, 1152px e 1024px. A responsividade para telas de 800px e menores ainda está em desenvolvimento.
+O site atualmente apresenta responsividade para resoluções de 1920px (zoom em 125%), 1680px, 1600px, 1440px, 1400px, 1280px, 1152px e 1024px. A responsividade para telas de  1920px (zoom 100%), 800px e menores ainda está em desenvolvimento.
 
-### JavaScript
-
-Foi aplicada algumas funções básicas e para acessibilidade apresentadas em aula, porém na página produto.html os JS de acessibilidade apresenta problemas de execução, possível conflito com o JS do Lightbox.
