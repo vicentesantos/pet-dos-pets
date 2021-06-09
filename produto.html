@@ -13,7 +13,7 @@
         <script src="js/lightbox.js"></script>
         <script src="js/fonte.js"></script>
         <script src="js/contraste.js"></script>
-        <script type="text/javascript">
+        <script>
             $(document).ready(function(){
                 $('#cep').mask('99999-999');
             });
@@ -55,12 +55,14 @@
                 <input type="checkbox" id="bt-menu">
                 <ul id="menu"><!--nível 1-->
                     <li><a href="index.html"><b>Início</b></a></li>
-                    <ul id="icon-user-menu"><!--Icones da Área do Cliente-->
-                        <li><a href="javascript:void(0);" title="Assinatura">Assinatura</a></li>
-                        <li><a href="javascript:void(0);" title="Carrinho">Carrinho</a></li>
-                        <li><a href="javascript:void(0);" title="Meus Pedidos">Meus Pedidos</a></li>
-                        <li><a href="javascript:void(0);" title="Área do Cliente">Área do Cliente</a></li>
-                    </ul>
+                    <li id="icon-user-menu"><a href="javascript:void(0);" title="Cliente"><b>Cliente</b>
+                        <ul ><!--Icones da Área do Cliente-->
+                            <li><a href="javascript:void(0);" title="Assinatura">Assinatura</a></li>
+                            <li><a href="javascript:void(0);" title="Carrinho">Carrinho</a></li>
+                            <li><a href="javascript:void(0);" title="Meus Pedidos">Meus Pedidos</a></li>
+                            <li><a href="javascript:void(0);" title="Área do Cliente">Área do Cliente</a></li>
+                        </ul>
+                    </li>
                     <li><a href="cachorro.html"><b>Cachorro</b></a>
                         <ul><!--nível 2-->
                             <li><a href="javascript:void(0);">Ração</a>

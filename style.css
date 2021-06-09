@@ -43,7 +43,7 @@ a:hover{
         margin-left: 20%;
     }
     #topo{/*header*/
-        widows: 100%;
+        width: 100%;
         height: auto;
         background-color: #e0d619;
     }
@@ -292,7 +292,7 @@ a:hover{
     }
     #blog-1{
         content: "";
-        clear: boath;
+        clear: both;
         display: table;
         width: 80%;
     }
@@ -303,7 +303,7 @@ a:hover{
     }
     #blog-2{
         content: "";
-        clear: boath;
+        clear: both;
         display: table;
         width: 80%;
     }
@@ -665,8 +665,6 @@ a:hover{
         width: 75%;
         flex-direction: row;
         display: flex;
-        -webkit-align-items: left;
-        align-items: left;
         -webkit-justify-content: left;
         justify-content: left;
         margin-top: -41%;

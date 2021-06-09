@@ -19,7 +19,7 @@
                 <li class="atalhos"><a href="#menu" accesskey="2" title="Ir para o menu da página">Ir para o menu da página [2]</a></li>
                 <li class="atalhos"><a href="#rodape" accesskey="3" title="Ir para o rodapé da página">Ir para o rodapé da página [3]</a></li>
                 <li id="pg-acess"><a href="acessibilidade.html" title="Acessibilidade">Acessibilidade</a></li>
-                <li class="contraste"><a href="javascript:void(0);" id="contraste"title="Contraste">Contraste</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste" title="Contraste">Contraste</a></li>
                 <li class="contraste"><a href="javascript:void(0);" id="semcontraste" title="Sem Contraste">Sem Contraste</a></li>
                 <li class="fonte"><a href="javascript:void(0);" id="aumenta" title="Aumentar a fonte (Ctrl +)">A+</a></li> 
                 <li class="fonte"><a href="javascript:void(0);" id="diminui" title="Diminuir a fonte (Ctrl -)">A-</a></li>
@@ -45,12 +45,14 @@
                 <input type="checkbox" id="bt-menu">
                 <ul id="menu"><!--nível 1-->
                     <li><a href="index.html"><b>Início</b></a></li>
-                    <ul id="icon-user-menu"><!--Icones da Área do Cliente-->
-                        <li><a href="javascript:void(0);" title="Assinatura">Assinatura</a></li>
-                        <li><a href="javascript:void(0);" title="Carrinho">Carrinho</a></li>
-                        <li><a href="javascript:void(0);" title="Meus Pedidos">Meus Pedidos</a></li>
-                        <li><a href="javascript:void(0);" title="Área do Cliente">Área do Cliente</a></li>
-                    </ul>
+                    <li id="icon-user-menu"><a href="javascript:void(0);" title="Cliente"><b>Cliente</b>
+                        <ul ><!--Icones da Área do Cliente-->
+                            <li><a href="javascript:void(0);" title="Assinatura">Assinatura</a></li>
+                            <li><a href="javascript:void(0);" title="Carrinho">Carrinho</a></li>
+                            <li><a href="javascript:void(0);" title="Meus Pedidos">Meus Pedidos</a></li>
+                            <li><a href="javascript:void(0);" title="Área do Cliente">Área do Cliente</a></li>
+                        </ul>
+                    </li>
                     <li><a href="cachorro.html"><b>Cachorro</b></a>
                         <ul><!--nível 2-->
                             <li><a href="javascript:void(0);">Ração</a>
@@ -136,7 +138,7 @@
         </header>
         <main id="conteudo">
             <section id=banner>
-                <img class="banner"src="images/banner.png">
+                <img class="banner" src="images/banner.png">
             </section>
             <section>
                 <h1 class="title">PROMOÇÃO PETS</h1>
@@ -192,7 +194,7 @@
                 </div>
             </article>
             <section>
-                <h1 class="title">ADOÇÃO <img src="images/adoção (2).png" id="adocao-logo"alt="adooção"></h1>
+                <h1 class="title">ADOÇÃO</h1><img src="images/adoção (2).png" id="adocao-logo" alt="adoção">
                 <conteudo id="adocao">
                     <div class="pets">
                         <img class="pet-foto" src="images/dog1.jpg" alt="cachorro da raça flat coated retriever preto"><br>
