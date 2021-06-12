@@ -629,7 +629,7 @@ a:hover{
         color: black;
     }
     #frete{
-        border: 1px solid #000;
+        border: 1px solid #fff;
         margin-top: 10%;
         width: 90%;
         height: 220px;
@@ -974,7 +974,7 @@ a:hover{
         text-decoration: underline;
     }
     .paragrafo{/*página acessibilidade.html*/
-        color: #000;
+        color: #fff;
         padding: 0 5% 0 5%;
         margin-top: 0.5rem;
     }
